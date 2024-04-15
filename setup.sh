@@ -1,7 +1,9 @@
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
 pip install fvcore iopath
 
 # install pytorch3d
-pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
+pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py39_cu118_pyt201/download.html
 
 pip install tensorboard==2.13.0 tensorboardX==2.6.1
 pip install pyspy==0.1.1
@@ -15,7 +17,9 @@ pip install scikit-learn==1.3.0 scikit-image==0.21.0
 pip install av==10.0.0 lpips==0.1.4
 pip install timm==0.9.2 librosa==0.9.2
 
-pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+pip install openmim
+mim install mmengine
+mim install "mmcv>=2.0.0"
 
 pip install transformers==4.33.2
 pip install pretrainedmodels==0.7.4
@@ -34,6 +38,4 @@ pip install pyloudnorm webrtcvad pyworld==0.2.1rc0 pypinyin==0.42.0
 pip install PyMCubes
 pip install pyyaml
 pip install setproctitle
-
-bash docs/prepare_env/install_ext.sh
 

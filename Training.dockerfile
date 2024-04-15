@@ -6,6 +6,6 @@ RUN apt update
 RUN apt-get -y install git
 RUN apt-get -y install gcc
 RUN apt-get -y install g++
-RUN ./setup.sh
+RUN sh setup.sh
 
 CMD ["sh", "train.sh"]

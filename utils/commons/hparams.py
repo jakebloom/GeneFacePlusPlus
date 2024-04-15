@@ -110,7 +110,7 @@ def set_hparams(config='', exp_name='', hparams_str='', print_hparams=True, glob
     saved_hparams = {}
     args_work_dir = ''
     if args.exp_name != '':
-        args_work_dir = f'checkpoints/{args.exp_name}'
+        args_work_dir = f'/content/drive/MyDrive/Woodspace/checkpoint/{args.exp_name}'
         ckpt_config_path = f'{args_work_dir}/config.yaml'
         if os.path.exists(ckpt_config_path):
             with open(ckpt_config_path) as f:
